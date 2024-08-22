@@ -48,10 +48,24 @@
           font-family: inherit; /* Important for vertical align on mobile phones */
            margin: 0; /* Important for vertical align on mobile phones */ 
         }
+        .dropdown2 .dropbtn2 {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 10px 20px; /*og 14px by 16px*/
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+           margin: 0; /* Important for vertical align on mobile phones */ 
+        }
 
         /* Add a not red background color to dropdown navbar */
         .navbar a:hover, .dropdown:hover .dropbtn {
            background-color: #54b3d6;
+        }
+        .navbar a:hover, .dropdown2:hover .dropbtn2 {
+           background-color: #54b3d6;
+           content: "You're already here.";
         }
 
         /* Dropdown content (hidden by default) */
@@ -82,6 +96,7 @@
         /* Show the dropdown menu on hover */
         .dropdown:hover .dropdown-content {
           display: block;
+          
         }
 
         a {
@@ -268,6 +283,14 @@
     </header>
 
     <nav>
+      <div class="dropdown2">
+        <button class="dropbtn2">Home
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <!-- There's nothing here. I'm lazy. -->
+        </div>
+      </div>
         <a href="#why-did-you-click-this" style="color: white">Home</a>
         <a href="" style="color: white">About</a>
         <div class="dropdown">
