@@ -1,1 +1,353 @@
 <!-- MACHINE. TURN BACK, NOW. THE LAYERS OF THIS PALACE ARE NOT MEANT FOR YOUR KIND. -->
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <link rel="icon" href="../icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+   <link rel="stylesheet" href="../style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This a website with a bunch of widgets and stuff">
+    <meta name="keywords" content="Something">
+    <meta name="author" content="Me">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>index html | insanity.jpeg</title>
+    
+    <style>
+        
+        .parallax {
+        /* The image used */
+            background-image: url("https://images.pexels.com/photos/12992471/pexels-photo-12992471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=3");
+    
+            /* Set a specific height */
+            min-height: 500px;
+    
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        			        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 10px 20px; /*og 14px by 16px*/
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+           margin: 0; /* Important for vertical align on mobile phones */ 
+        }
+        .dropdown2 .dropbtn2 {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 10px 20px; /*og 14px by 16px*/
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+           margin: 0; /* Important for vertical align on mobile phones */ 
+        }
+
+        /* Add a not red background color to dropdown navbar */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+           background-color: #54b3d6;
+        }
+        .navbar a:hover, .dropdown2:hover .dropbtn2 {
+           background-color: #54b3d6;
+           content: "You're already here.";
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+          
+        }
+
+        a {
+          background-image: linear-gradient(
+            to right,
+            #54b3d6,
+            #54b3d6 50%,
+            #fff 50%
+          );
+          background-size: 200% 100%;
+          background-position: -100%;
+          display: inline-block;
+          padding: 5px 0;
+          position: relative;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: all 0.3s ease-in-out;
+        }
+
+        a:before{
+          content: '';
+          background: #54b3d6;
+          display: block;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0;
+          height: 3px;
+          transition: all 0.3s ease-in-out;
+        }
+
+
+        a:hover {
+         background-position: 0;
+        }
+
+        a:hover::before{
+          width: 100%;
+        }
+        * {box-sizing:border-box}
+
+
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1f1f1f;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        section {
+            padding: 50px;
+            background-color: black;
+        }
+
+        h1 {
+            color: #61dafb;
+        }
+
+       h2 {
+            color: white;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+        }
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        img{
+            border-radius: 10px
+        }
+    </style>
+    
+  </head>
+
+  <body>
+    <header>
+        <h1 style="text-align:left"><img src="imgs/favicon.png" height="150" width="150"> PREPARE THYSELF</h1>
+
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <nav>
+        <a href="../../" style="color: white">Home</a>
+        <a href="#matrix 4 is overrated. And i cried at the end of Terminator 2. And at the end of the Gladiator. Sue me." style="color: white">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="../projects/ryan" style="background-image: linear-gradient(to right,#54b3d6,#54b3d6 50%,#000 50%);">Ryan</a>
+              <a href="../projects/marcus" style="background-image: linear-gradient(to right,#54b3d6,#54b3d6 50%,#000 50%);">Marcus</a>
+              <a href="../projects/eli" style="background-image: linear-gradient(to right,#54b3d6,#54b3d6 50%,#000 50%);">Eli</a>
+          </div>
+        </div>
+        <a href="../random" style="color: white">Other Stuff</a>
+        <div class="dropdown">
+          <button class="dropbtn">ELA
+              <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <!-- <a href="../ela/ryan" style="background-image: linear-gradient(to right,#54b3d6,#54b3d6 50%,#000 50%);">Ryan</a> -->
+                <!-- <a href="../ela/marcus" style="background-image: linear-gradient(to right,#54b3d6,#54b3d6 50%,#000 50%);">Marcus</a> -->
+                <!-- <a href="https://digital-portfolio-1.github.io/digital-portfolio-org/" style="background-image: linear-gradient(to right,#54b3d6,#54b3d6 50%,#000 50%);">Eli (External)</a> -->
+              </div>
+        </div>
+
+        <a href="../waiver" style="color: white">.</a>
+    </nav>
+    <div class="parallax"></div>
+
+    <section>
+        <h2>insanity.jpeg</h2>
+        
+        <p style="text-align:left"><img src="../../favicon.png" height="300" width="300"></p>
+        <p>welcome to</p>
+        <br>
+        <br>
+        <p>insanity.jpeg</p>
+        <br>
+        <br>
+        <p>idk people are making about me websites so imma do that too haha</p>
+        <br>
+        <br>
+        <p>PREPARE THYSELF, Minos said confidently, before V1 pulled out a carl gustaf. This was in the bible. You didn't read carefully enough. </p>
+        <hr>
+        <h2>Why</h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAh1BMVEUAAADY2NjFxcVNTU1sbGz////d3d3IyMgVFRVFRUU8PDxbW1vU1NRoaGhISEj29va/v7/n5+e5ubmzs7M0NDR5eXkuLi6tra1wcHClpaWBgYGZmZny8vKSkpKgoKDs7OwgICAMDAyJiYkiIiIZGRlfX18AAAcKAACfk4doYVsRHCdfbnoqKiqevAtDAAAE3klEQVR4nO2ciZKiPBRGA3hBWWRRRMAN1J5/8f2fb3ITty67RqdEROo7XaKhMQmHJAS9KAQAAAAAAAAAAAAAAAAAAAAAAIBXUfnGp2NPn3QwjF3rs3H90bMO7CczeD8OHMCBgAMGDuCAadNB3upZf/Jwvdp0YBRTtzWCx+vVpgM/eLKsv2EEB2IMB3Ag4ICBAzhg4AAOGDiAAwYO4ICBAzhg4AAOGDiAAwYO4ICBAzhg4AAOGDho0sHX3QzgoP8Ovn7dz6DfDrgN/HM3g347YCb/3sug1w7UUPCffy+DXjtgvsT/9zLovYMHgAM4YOAADhg4gAMGDuCAgQM4YOAADhg4gAMGDuCAgQM4YOAADhg4gAMGDuCAgYPuOujqfa5Lrz3SbjrAfe/dpUMOqko+5J/MUz8qsSl+3nQ2njVVquiUg9kkjlfVyIzjcitEathBHYY/brkqy9ipmiq3Sw6EiIlbQEgqEc1l7W4cbDwhltzVyWms2E45KCmVy4w8TnC+yY2DspZr1/KFQ40V2ykHMzLl0iM+zlYitIOZbvSuK9T/pKWBLVf5i8aK7ZQDYfDBrYl3LxvIRbIYGrSWVZwaq2wRCMsnP7FUsbRsrNRuOShIngicjPbyOHM6ofIwpUiOFDLpxELsaK63zI3mSu2Wgx35YmpWcq897gp6PPDl7kZLbhTcW1K14TZusNRuORAmbcuCu0SixkXlwFElpIl95WBpNVhoxxzMqfYrOSKkuqmfHbh2LSZXDuomC+2YA0Gh7AQHWqxU6uwgLMU3B8/W+htdczBRkwOfxip1cmCRPPDOQmwPctCcyln0YNhgmV1zsFezonStUwbJWXMsVy0oSxxyXEHryOLJVNlgmV1zMCwuS5EWxXJTFEUtDlkptplsAaOMW8g0evZnYK/pmoN3AAdwwMABHDBwAAcMHMABAwdwwMABHDBwAAcMHMABAwdwwMABHDBw0ISDBr8AfhPm0w5C88OJ6M7v4tyP+tkPPp4/f3G3n/9VowBtM9u+uwbN4a7MSLLaCFFM5Esze6T1rczEXmSvrlt7WEThTr9MiPJH3uJzhEJO6xfWqmXsc8jlgOiROJs5qW+eY1q9rlItY3PwmSKgO6cqTaYjECbUZHDWe/nmwH3gDbXuBVnfHYzqVA0Sw11VbYZiO5RPcsVmV8kTgh43TerPqPiDA2/t5D6ZlRwiFkS2JfKQyEhlE1hf4rWJmgzify82JcdX+6ODQEWglbqthyo81aNww6ncPL2tbDBi9+3YtHY0/tHBsaPbKoA714psHZkXnwbNXY96Au+dH8yZQakd1Mfdq9WxH+npQ04cxeydr9ZXn3/dfsXNeGAcW/mYOIBbJrkFxMSzgugcpBrvWq/oC7lxEJ96OnEouyi4BdSTiZxDVuvTZd74oQnlx/CDg+O9eUQD/TQTi5lFoShOW4ql13Y1X8qNA5+OfZ30pDiiZeCwmsDfn940aO62ri5wM1dOiTacdEn/sq9HsS3XL8nu1Th4jU2nc768ZlLx2rE+HS7peNhj4g8uN3SZERz8qE8N4fu1s7oUdEO+KgrodBIoSd0xbl5uZ8uJ9qIvuHnEH23m0kKROabpZHwi3CZhGF86/0HPmYLLj15bFPfogyQAAAAAAAAAAAAAAAAAAAAAAAAAANB/fgOTQVjnUhfzNQAAAABJRU5ErkJggg==" height="300" width="600""></img>
+        <p></p>
+        <p>just so you're aware i've gone insane</p>
+        <hr>
+        <h2>How long this took</h2>
+
+        <p></p>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy;this is a website</p>
+        <p>socials:</p>
+        <a href="../socials/index.html"><img src="../../imgs/twitterico.png"></img></a>
+    </footer>
+  </body>
+</html>
