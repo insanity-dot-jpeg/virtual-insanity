@@ -369,32 +369,32 @@
         <div class="image-row">
           <div class="zoom">
 
-            <a href="../socials/twitter.html"><img src="../../imgs/twitterico.png" style="width:42px;height:42px;"></img></a>
+            <a href="../socials/twitter.html" target="_blank"><img src="../../imgs/twitterico.png" style="width:42px;height:42px;"></img></a>
           
           </div>
           <div class="zoom">
 
-            <a href="../socials/insta.html"><img src="../../imgs/instaico.png" style="width:42px;height:42px;"></img></a>
+            <a href="../socials/insta.html" target="_blank"><img src="../../imgs/instaico.png" style="width:42px;height:42px;"></img></a>
           
           </div>
           <div class="zoom">
 
-            <a href="../socials/vine.html"><img src="../../imgs/vineico.png" style="width:42px;height:42px;"></img></a>
+            <a href="../socials/vine.html" target="_blank"><img src="../../imgs/vineico.png" style="width:42px;height:42px;"></img></a>
           
           </div>
           <div class="zoom">
 
-            <a href="https://www.youtube.com/channel/UC7_YxT-KID8kRbqZo7MyscQ"><img src="../../imgs/youtubeico.png" style="width:42px;height:42px;"></img></a>
+            <a href="https://www.youtube.com/channel/UC7_YxT-KID8kRbqZo7MyscQ" target="_blank"><img src="../../imgs/youtubeico.png" style="width:42px;height:42px;"></img></a>
           
           </div>
           <div class="zoom">
 
-            <a href="../socials/index.html"><img src="../../imgs/twitterico.png" style="width:42px;height:42px;"></img></a>
+            <a href="#" target="_blank" id="randomLink" onclick="redirectToRandomSite(); return false;"><img src="../../imgs/facebookico.png" style="width:42px;height:42px;"></img></a>
           
           </div>
           <div class="zoom">
 
-            <a href="../socials/index.html"><img src="../../imgs/twitterico.png" style="width:42px;height:42px;"></img></a>
+            <a href="../socials/index.html" target="_blank"><img src="../../imgs/twitterico.png" style="width:42px;height:42px;"></img></a>
           
           </div>
         </div>
@@ -405,5 +405,25 @@
         <!-- <a href="../socials/index.html"><img src="../../imgs/instaico.png" style="width:42px;height:42px;"></img></a> -->
         
     </footer>
+    <script>
+      function redirectToRandomSite() {
+          // Array of URLs to choose from
+          const urls = [
+              'https://google.com',
+              'https://github.com',
+              'https://chatgpt.com',
+              'https://youtube.com'
+          ];
+          
+          // Generate a random index
+          const randomIndex = Math.floor(Math.random() * urls.length);
+          
+          // Get the random URL
+          const randomUrl = urls[randomIndex];
+          
+          // Redirect to the random URL
+          window.location.href = randomUrl;
+      }
+  </script>
   </body>
 </html>
