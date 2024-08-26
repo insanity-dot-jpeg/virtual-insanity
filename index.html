@@ -1,3 +1,4 @@
+<!-- MACHINE. TURN BACK, NOW. THE LAYERS OF THIS PALACE ARE NOT MEANT FOR YOUR KIND. -->
 
 
 <!DOCTYPE html>
@@ -271,20 +272,39 @@
         img{
             border-radius: 10px
         }
+        .zoom {
+          padding: 0px;
+          transition: transform .2s; /* Animation */
+          width: 42px;
+          height: 42px;
+          margin: 0 auto;
+        }
+
+        .zoom:hover {
+          transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+        .image-row {
+          display: flex;
+          justify-content: space-between; /* this will add equal space between each image */
+          height: 100%;
+          width: 25%;
+          margin: auto;
+        }
+        
     </style>
     
   </head>
 
   <body>
     <header>
-        <h1 style="text-align:left"><img src="imgs/favicon.png" height="150" width="150"> PREPARE THYSELF</h1>
+        <h2 style="text-align:left"><img src="imgs/favicon.png" height="150" width="150">about page | insanity.jpeg</h2>
 
         <link rel="stylesheet" href="style.css">
     </header>
 
     <nav>
-        <a href="#nobody will see these so i can say what i want" style="color: white">Home</a>
-        <a href="subpages/about/" style="color: white">About</a>
+        <a href="../../" style="color: white">Home</a>
+        <a href="#matrix_4_is_overrated._And_i_cried_at_the_end_of_Terminator_2._And_at_the_end_of_the_Gladiator._Sue_me." style="color: white">About</a>
         <div class="dropdown">
           <button class="dropbtn">Projects
             <i class="fa fa-caret-down"></i>
@@ -345,7 +365,67 @@
 
     <footer>
         <p>&copy;this is a website</p>
+        <p>socials:</p>
+        <div class="image-row">
+          <div class="zoom">
+
+            <a href="subpages/socials/twitter.html" target="_blank"><img src="../../imgs/twitterico.png" style="width:42px;height:42px;"></img></a>
+          
+          </div>
+          <div class="zoom">
+
+            <a href="subpages/socials/insta.html" target="_blank"><img src="../../imgs/instaico.png" style="width:42px;height:42px;"></img></a>
+          
+          </div>
+          <div class="zoom">
+
+            <a href="#vines_dead_accept_it" target="_blank"><img src="../../imgs/vineico.png" style="width:42px;height:42px;"></img></a>
+          
+          </div>
+          <div class="zoom">
+
+            <a href="https://www.youtube.com/channel/UC7_YxT-KID8kRbqZo7MyscQ" target="_blank"><img src="../../imgs/youtubeico.png" style="width:42px;height:42px;"></img></a>
+          
+          </div>
+          <div class="zoom">
+
+            <a href="#" target="_blank" id="randomLink" onclick="redirectToRandomSite(); return false;"><img src="../../imgs/facebookico.png" style="width:42px;height:42px;"></img></a>
+          
+          </div>
+          <div class="zoom">
+
+            <a href="https://github.com/ASquidboi" target="_blank"><img src="../../imgs/githubico.png" style="width:42px;height:42px;"></img></a>
+          
+          </div>
+        </div>
+        
+        
+        
+        
+        <!-- <a href="../socials/index.html"><img src="../../imgs/instaico.png" style="width:42px;height:42px;"></img></a> -->
         
     </footer>
+    <script>
+      function redirectToRandomSite() {
+          // Array of URLs to choose from
+          const urls = [
+              'https://www.thevillages.com/',
+              'https://www.stpaulseniors.org/',
+              'https://theglenatscrippsranch.com/',
+              'https://lamareaseniorliving.com/',
+              'https://www.ohanacarehomesd.com/'
+          ];
+          
+          // Generate a random index
+          const randomIndex = Math.floor(Math.random() * urls.length);
+          
+          // Get the random URL
+          const randomUrl = urls[randomIndex];
+          
+          // Redirect to the random URL
+          //window.location.href = randomUrl;
+          window.open(randomUrl, '_blank');
+      }
+  </script>
   </body>
 </html>
